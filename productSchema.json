@@ -1,0 +1,34 @@
+{
+    "title": "Producy",
+    "description": "A product",
+    "type": "object",
+    "productProperties":
+    {
+       "id":
+       {
+          "description": "A products Id",
+          "type": "number"
+          
+       },
+       "productName":
+       {
+          "description": "A products name",
+          "type": "number",
+          "minLength" : 3,
+          "maxLength" : 100
+       },
+       "productCost":
+       {
+          "description": "A products cost",
+          "type": "number",
+          "example": 2.99
+       },
+       "availableQuantity":
+       {
+          "description": "How much of a product is left.",
+          "type": "number",
+          "example": 10
+       }    
+    },
+ "required": ["id", "productName", "productCost", "availableQuantity"] 
+}

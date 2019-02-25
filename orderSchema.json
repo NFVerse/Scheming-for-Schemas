@@ -1,0 +1,46 @@
+{
+    "title": "Order",
+    "description": "An Order",
+    "type": "object",
+    "orderProperties":
+    {
+       "productName":
+       {
+          "description": "A products name",
+          "type": "string",
+          "minLength" : 3,
+          "maxLength" : 100
+       },
+       "orderDepart":
+       {
+          "description": "When the shipment should leave",
+          "type": "number",
+          "example": 22.02
+       },
+       "orderPlace":                                                                     
+       {
+          "description": "When the order was placed",
+          "type": "number",
+          "example": 21.02
+       },                                                                      
+       "orderArrive":                                                                     
+       {
+          "description": "When the order arrives to the customer",
+          "type": "number",
+          "example": 24.02
+       },                                                                            
+       "cardUsed":                                                                     
+       {
+          "description": "The credit card used to order",
+          "type": "string",
+          "example" : "Wells Fargo Credit Card"
+       },                                                                               
+       "usersEmail":                                                                     
+       {
+          "description": "Email of the user who ordered the product",
+          "type": "string",
+          "example" : "hayden.nonya@gmail.com"
+       }                                                                               
+    },
+    "required": ["productName", "orderDepart", "orderPlace", "orderArrive", "cardUsed", "usersEmail" ]   
+ }
